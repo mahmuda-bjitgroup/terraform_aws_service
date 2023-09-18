@@ -12,7 +12,7 @@ resource "aws_launch_template" "lc" {
     security_groups             = [aws_security_group.vpc-ssh.id]
     subnet_id                   = aws_subnet.mahmuda_public_subnet_1.id
   }
-  user_data = filebase64("/user_data.tpl")
+  user_data = filebase64("user_data.tpl")
 }
 
 # laiunch template for another region
