@@ -1,4 +1,4 @@
-resource "aws_launch_template" "lc" {
+resource "aws_launch_template" "lc_2" {
   name = "tf_launch_template"
   #   image_id      = data.aws_ami.amazon_linux.id
   image_id      = "ami-04cb4ca688797756f"
